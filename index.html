@@ -1,7 +1,40 @@
-<?php include 'includes/header.php'; ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GESC - Unicamp</title>
+    
+    <link rel="stylesheet" href="assets/css/style.css?v=1">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <a href="index.html" class="logo-link">
+            <img src="assets/images/logo.png" alt="GESC Logo" class="main-logo">
+        </a>
+
+        <button class="mobile-menu-btn" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Linhas de Pesquisa</a></li>
+                <li><a href="#">Publicações</a></li>
+                <li><a href="#">Infraestrutura</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
 <section class="hero">
-    <img src="assets/images/hero.jpg" id="hero-img" alt="Banner">
+    <img src="assets/images/hero.jpg" id="hero-img" alt="Banner GESC">
     <div class="hero-content">
         </div>
 </section>
@@ -62,6 +95,7 @@
         </div>
     </section>
 </div>
+
 <section class="coordination-section">
     <div class="container">
         
@@ -72,7 +106,8 @@
         <div class="founder-block">
             <div class="founder-image">
                 <img src="assets/images/founder1.jpg" onerror="this.style.display='none'" alt="Foto do Coordenador">
-                <div class="placeholder-box"></div> </div>
+                <div class="placeholder-box"></div> 
+            </div>
             <div class="founder-content">
                 <h3>FUNDADORES</h3>
                 <h4>PROF. DR. NOME DO COORDENADOR</h4>
@@ -88,7 +123,7 @@
             </div>
         </div>
 
-        <div class="founder-block">
+        <div class="founder-block reverse">
             <div class="founder-content">
                 <h3>CO-FUNDADOR</h3>
                 <h4>PROF. DR. OUTRO NOME</h4>
@@ -118,6 +153,7 @@
         </div>
 
         <div class="team-grid">
+            
             <div class="team-card">
                 <div class="team-img-wrapper">
                     <img src="assets/images/team1.jpg" alt="Membro" onerror="this.src='https://via.placeholder.com/150'">
@@ -177,6 +213,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="team-card">
                 <div class="team-img-wrapper">
                     <img src="assets/images/team2.jpg" alt="Membro" onerror="this.src='https://via.placeholder.com/150'">
@@ -191,6 +228,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="team-card">
                 <div class="team-img-wrapper">
                     <img src="assets/images/team2.jpg" alt="Membro" onerror="this.src='https://via.placeholder.com/150'">
@@ -205,6 +243,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="team-card">
                 <div class="team-img-wrapper">
                     <img src="assets/images/team2.jpg" alt="Membro" onerror="this.src='https://via.placeholder.com/150'">
@@ -219,6 +258,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="team-card">
                 <div class="team-img-wrapper">
                     <img src="assets/images/team2.jpg" alt="Membro" onerror="this.src='https://via.placeholder.com/150'">
@@ -233,6 +273,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="team-card">
                 <div class="team-img-wrapper">
                     <img src="assets/images/team2.jpg" alt="Membro" onerror="this.src='https://via.placeholder.com/150'">
@@ -247,6 +288,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="team-card">
                 <div class="team-img-wrapper">
                     <img src="assets/images/team2.jpg" alt="Membro" onerror="this.src='https://via.placeholder.com/150'">
@@ -261,6 +303,22 @@
                     </div>
                 </div>
             </div>
+
+            <div class="team-card">
+                <div class="team-img-wrapper">
+                    <img src="assets/images/team2.jpg" alt="Membro" onerror="this.src='https://via.placeholder.com/150'">
+                </div>
+                <div class="team-info">
+                    <h3>Nome do Pesquisador</h3>
+                    <span>Mestrando em Eng.</span>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
             <div class="team-card">
                 <div class="team-img-wrapper">
                     <img src="assets/images/team2.jpg" alt="Membro" onerror="this.src='https://via.placeholder.com/150'">
@@ -313,4 +371,41 @@
     </div>
 </section>
 
-<?php include 'includes/footer.php'; ?>
+<footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <img src="assets/images/logo.jpg" alt="GESC" style="filter: brightness(0) invert(1); max-width: 80px;">
+            <p>Grupo de Engenharia de Sistemas Complexos</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contato</h4>
+            <p>Rua Paschoal Marmo, 1888<br>Jd. Nova Itália, Limeira - SP</p>
+            <p><strong>Email:</strong> gesc@unicamp.br</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Navegação</h4>
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Pesquisa</a></li>
+                <li><a href="#">Parceiros</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Social</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        &copy; 2025 GESC - Todos os direitos reservados.
+    </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
