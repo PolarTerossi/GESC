@@ -1,0 +1,503 @@
+/* --- ARQUIVO: assets/css/style.css --- */
+
+/* 1. VARIÁVEIS E RESET (Configurações Globais) */
+:root {
+    --primary-blue: #002347; /* Azul Marinho Unicamp */
+    --accent-red: #8a1c26;   /* Vermelho Unicamp */
+    --text-dark: #333;
+    --text-light: #666;
+    --bg-light: #f8f9fa;
+    --max-width: 1200px;     /* Largura do conteúdo do site */
+    --header-height: 110px;   /* Altura fixa da barra */
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+body { background-color: #fff; color: var(--text-dark); display: flex; flex-direction: column; min-height: 100vh; }
+
+img { max-width: 100%; display: block; }
+
+a { text-decoration: none; }
+
+/* 2. HEADER PROFISSIONAL (Estilo Wide + Logo Grande) */
+header {
+    background-color: var(--primary-blue);
+    height: var(--header-height);
+    position: sticky; /* Menu fixa no topo ao rolar */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    /* O segredo: permite que a logo "vaze" para fora da barra */
+    overflow: visible; 
+}
+
+.header-container {
+    width: 96%; /* Ocupa quase a tela toda (Wide) */
+    max-width: 1600px; /* Limite para monitores gigantes */
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between; /* Joga logo p/ esquerda e menu p/ direita */
+    align-items: center;
+    position: relative;
+}
+
+/* Estilo da Logo e Link */
+.logo-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 1001; /* Fica acima de tudo */
+}
+
+.main-logo {
+    height: 100px; 
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Empurra a logo para baixo para criar o efeito de brasão */
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4)); /* Sombra para destacar do fundo */
+    transition: all 0.3s ease;
+}
+
+/* Menu de Navegação */
+nav ul { display: flex; list-style: none; gap: 30px; }
+
+nav a {
+    color: rgba(255,255,255,0.85);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 8px 0;
+    position: relative;
+    transition: color 0.3s;
+}
+
+/* Efeito de linha ao passar o mouse */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-red);
+    transition: width 0.3s;
+}
+
+nav a:hover { color: #fff; }
+nav a:hover::after { width: 100%; }
+
+.mobile-menu-btn { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
+
+/* 3. HERO SECTION (Banner) */
+.hero {
+    height: 500px; /* Altura do banner */
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    z-index: 1; /* Fica abaixo da logo */
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6; /* Escurece a imagem para o texto aparecer */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+}
+
+/* 4. SEÇÃO GESC (Sobre) */
+.container {
+    max-width: var(--max-width);
+    margin: 80px auto; /* Espaçamento vertical maior */
+    padding: 0 20px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr; /* Sidebar fixa, conteúdo flexível */
+    gap: 50px;
+}
+
+/* Sidebar Vermelha */
+.sidebar {
+    background: var(--accent-red);
+    color: white;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(138, 28, 38, 0.2);
+    height: fit-content;
+}
+
+.sidebar h3 { border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 15px; margin-bottom: 20px; font-size: 1.2rem; }
+.sidebar ul { list-style: none; }
+.sidebar li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: transform 0.2s;
+}
+.sidebar li:hover { transform: translateX(5px); color: #ffdbe0; }
+
+/* Conteúdo Principal */
+.content-area img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.text-content h2 { color: var(--primary-blue); margin-bottom: 25px; font-size: 1.8rem; }
+.text-content p { margin-bottom: 18px; line-height: 1.7; color: var(--text-light); text-align: justify; }
+
+/* 5. LINHAS DE PESQUISA */
+.bg-light { background-color: var(--bg-light); padding: 80px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+
+.section-title { margin-bottom: 50px; text-align: center; }
+.section-title h2 {
+    font-size: 2.2rem;
+    color: var(--primary-blue);
+    display: inline-block;
+    position: relative;
+    padding-bottom: 15px;
+}
+.section-title h2::after {
+    content: ''; display: block; width: 60px; height: 4px;
+    background: var(--accent-red); margin: 10px auto 0; border-radius: 2px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.research-card {
+    position: relative;
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.research-card:hover { transform: translateY(-5px); }
+.research-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+.research-card:hover img { transform: scale(1.1); }
+
+.card-label {
+    position: absolute; bottom: 0; left: 0; width: 100%; padding: 15px;
+    background: linear-gradient(to top, rgba(0,35,71,0.95), rgba(0,35,71,0.6), transparent);
+    color: white; text-align: center; font-weight: bold; font-size: 1.1rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* 6. NOVIDADES */
+.news-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr; /* O primeiro item é maior */
+    gap: 25px;
+}
+
+.news-item { background: white; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; transition: box-shadow 0.3s; }
+.news-item:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
+
+/* Item Destaque */
+.news-item.featured {
+    grid-column: 1 / -1; /* Ocupa a largura total na primeira linha */
+    display: flex;
+    background: #f0f4f8;
+    border: none;
+    min-height: 300px;
+}
+.featured img { width: 45%; object-fit: cover; }
+.featured-content { padding: 40px; display: flex; flex-direction: column; justify-content: center; }
+.featured-content h3 { font-size: 1.5rem; color: var(--primary-blue); margin: 10px 0; }
+
+.small-content { padding: 25px; }
+.small-content h4 { color: var(--primary-blue); margin-bottom: 10px; font-size: 1.1rem; }
+
+.btn-link {
+    color: var(--accent-red);
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    margin-top: auto;
+}
+.btn-link:hover { text-decoration: underline; }
+
+/* 7. FOOTER */
+footer { background: #111; color: #aaa; padding: 60px 0 20px; margin-top: auto; border-top: 4px solid var(--accent-red); }
+
+.footer-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 50px;
+}
+
+.footer-brand strong { color: white; font-size: 1.5rem; display: block; margin-bottom: 10px; }
+.footer-col h4 { color: white; margin-bottom: 25px; font-size: 1.1rem; border-left: 3px solid var(--accent-red); padding-left: 10px; }
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 10px; }
+.footer-col a { color: #aaa; transition: color 0.3s; }
+.footer-col a:hover { color: white; }
+
+.social-icons a { font-size: 1.5rem; margin-right: 15px; color: white; transition: 0.3s; }
+.social-icons a:hover { color: var(--accent-red); }
+
+.copyright { text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid #222; font-size: 0.85rem; }
+
+.coordination-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.founder-block {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+/* Para inverter a ordem no segundo bloco */
+.founder-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.founder-image {
+    flex: 1;
+    min-height: 400px;
+    position: relative;
+}
+
+/* Caixa cinza (Placeholder) idêntica à imagem que você mandou */
+.placeholder-box {
+    width: 100%;
+    height: 400px;
+    background-color: #ccc; /* Cinza */
+    border-radius: 4px;
+}
+
+.founder-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    position: absolute; /* Cobre a caixa cinza se a imagem existir */
+    top: 0; left: 0;
+}
+
+.founder-content {
+    flex: 1;
+}
+
+.founder-content h3 {
+    color: var(--primary-blue);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.founder-content h4 {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.founder-content p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.founder-social a {
+    color: #333;
+    font-size: 1.2rem;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+.founder-social a:hover {
+    color: var(--accent-red);
+}
+
+/* 2. SEÇÃO EQUIPE (Grid de Cards) */
+.team-section {
+    padding: 80px 0;
+    /* O bg-light já foi definido antes, mas reforçamos se precisar */
+    background-color: #f8f9fa; 
+}
+
+.team-grid {
+    display: flex; /* Mudamos de Grid para Flex */
+    flex-wrap: wrap; /* Permite quebrar linha quando chegar em 3 */
+    justify-content: center; /* O SEGREDO: Centraliza tudo, inclusive os 2 últimos */
+    gap: 40px; /* Espaço entre os cards */
+    max-width: 1200px;
+    margin: 80px auto 40px; /* Margem superior e inferior */
+}
+
+.team-card {
+    /* MATEMÁTICA: 100% dividido por 3 = 33.33%. 
+       Tiramos 40px para compensar o gap e não quebrar o layout. */
+    flex: 0 0 calc(33.333% - 40px); 
+    
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    text-align: center;
+    padding: 0 20px 30px 20px;
+    margin-top: 50px; /* Espaço para a foto pulando pra fora */
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.team-img-wrapper {
+    width: 120px;
+    height: 120px;
+    margin: -60px auto 20px; /* O PULO DO GATO: Margem negativa sobe a foto */
+    background: #e0e0e0; /* Fundo cinza caso sem foto */
+    border-radius: 50%;
+    border: 5px solid white; /* Borda branca para separar do fundo */
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.team-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-info h3 {
+    color: var(--primary-blue);
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.team-info span {
+    display: block;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.team-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.team-social a {
+    color: #555;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.team-social a:hover {
+    color: var(--accent-red);
+}
+
+@media (max-width: 1024px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+/* Em Celulares, muda para 1 por linha */
+@media (max-width: 600px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+/* Responsividade para estas seções */
+@media (max-width: 768px) {
+    .founder-block {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .founder-block.reverse {
+        flex-direction: column; /* No celular, mantém imagem em cima ou padrão */
+    }
+    
+    .founder-image {
+        width: 100%;
+        min-height: 250px;
+    }
+    .placeholder-box { height: 250px; }
+}
+/* 8. RESPONSIVIDADE (Mobile e Tablets) */
+@media (max-width: 900px) {
+    .news-grid { grid-template-columns: 1fr 1fr; }
+    .featured { flex-direction: column; }
+    .featured img { width: 100%; height: 250px; }
+}
+
+@media (max-width: 768px) {
+    /* No celular, removemos o efeito "Wide" e "Logo Grande" para caber na tela */
+    header { overflow: hidden; height: auto; padding: 10px 0; }
+    .header-container { width: 100%; padding: 0 15px; }
+    
+    .main-logo {
+        height: 50px; /* Volta ao tamanho padrão */
+        margin-top: 0;
+        filter: none;
+    }
+    
+    .mobile-menu-btn { display: block; }
+
+    /* Menu Hamburger */
+    #main-nav {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%; /* Logo abaixo do header */
+        left: 0;
+        background: var(--primary-blue);
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+    
+    #main-nav.active { display: block; animation: slideDown 0.3s forwards; }
+    
+    nav ul { flex-direction: column; gap: 15px; align-items: center; }
+    
+    .about-grid { grid-template-columns: 1fr; }
+    .news-grid { display: flex; flex-direction: column; }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
