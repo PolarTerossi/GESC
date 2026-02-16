@@ -107,6 +107,14 @@ nav a:hover::after { width: 100%; }
     opacity: 0.6; /* Escurece a imagem para o texto aparecer */
 }
 
+#hero-img {
+    transition: opacity 0.5s ease-in-out; /* Meio segundo de transição */
+    opacity: 1; /* Começa visível */
+    width: 100%; /* Garante que preencha o espaço */
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem não fique esticada */
+}
+
 .hero-content {
     position: absolute;
     top: 50%; left: 50%;

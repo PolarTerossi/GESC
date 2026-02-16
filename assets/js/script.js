@@ -6,9 +6,9 @@ function toggleMenu() {
 
 // Slider Simples
 const heroImages = [
-    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1920", // Dados
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920", // Tech
-    "https://images.unsplash.com/photo-1504384308090-c54be3855485?auto=format&fit=crop&w=1920"  // Indústria
+    "assets/images/hero1.jpg",
+    "assets/images/hero2.jpg",
+    "assets/images/hero3.jpg"
 ];
 
 let currentSlide = 0;
