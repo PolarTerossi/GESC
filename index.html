@@ -4,372 +4,341 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GESC - Unicamp</title>
-    
     <link rel="stylesheet" href="assets/css/style.css?v=1">
     <link rel="icon" type="image/png" href="assets/images/logo2.png">
-    <link rel="stylesheet" href="https://cqdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<header>
-    <div class="header-container">
-        <a href="index.html" class="logo-link">
-            <img src="assets/images/logo.png" alt="GESC Logo" class="main-logo">
-        </a>
+    <div id="header-placeholder"></div>
 
-        <button class="mobile-menu-btn" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </button>
+    <section class="hero">
+        <img src="assets/images/hero1.jpg" id="hero-img" alt="Banner GESC">
+    </section>
 
-        <nav id="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Linhas de Pesquisa</a></li>
-                <li><a href="#">Publicações</a></li>
-                <li><a href="#">Infraestrutura</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<section class="hero">
-    <img src="assets/images/hero1.jpg" id="hero-img" alt="Banner GESC">
-    <div class="hero-content">
-        </div>
-</section>
-
-<section class="container">
-    <div class="about-grid">
-        <aside class="sidebar">
-            <h3>GESC</h3>
-            <ul>
-                <li>Coordenação</li>
-                <li>Estrutura</li>
-                <li>Histórico</li>
-                <li>Palavra do Coordenador</li>
-                <li>Objetivos</li>
-                <li>Parceiros</li>
-                <li>Significado do Logo</li>
-                <li>Mapa do Campus</li>
-            </ul>
-        </aside>
-
-        <article class="content-area">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000" alt="Equipe GESC">
-            <div class="text-content">
-                <p>Sejam bem-vindos ao portal oficial do <strong>GESC – Grupo de Engenharia de Sistemas Complexos</strong>, sediado na Faculdade de Tecnologia (FT) da UNICAMP, em Limeira.</p>
-                <p>Nosso grupo consolidou-se como um centro <strong>multidisciplinar</strong> de excelência, onde pesquisadores e alunos de graduação e pós-graduação colaboram no desenvolvimento de soluções tecnológicas e modelos matemáticos avançados. Atuamos na intersecção estratégica entre as Engenharias (Telecomunicações, Transportes, Ambiental e Produção), a Administração e os Sistemas de Informação, utilizando ferramentas de Econofísica e Teoria dos Jogos para compreender fenômenos dinâmicos em mercados e redes.</p>
-                <p>Com o apoio fundamental de agências de fomento como <strong>FAPESP</strong> e <strong>CNPq</strong>, o GESC transforma dados em inteligência estratégica. Seja através da otimização de tarifas em telecomunicações ou do estudo de fluxos logísticos e sustentabilidade, nosso compromisso é com a inovação científica e a formação de mestres e engenheiros capacitados para liderar as transformações da sociedade moderna.</p>
-            </div>
-        </article>
-    </div>
-</section>
-
-<div class="bg-light">
-    <section class="container">
+   <section class="container">
+        
         <div class="section-title">
-            <h2>Linhas de Pesquisa</h2>
-            <p>Conectando ciências exatas e engenharia para modelar sistemas complexos.</p>
+            <h2>Bem-vindos ao Portal do GESC</h2>
         </div>
-
-        <div class="cards-grid">
-            <div class="research-card">
-                <img src="assets/images/transportes.jpg" alt="Transportes">
-                <div class="card-label">Logística e Transportes</div>
-            </div>
+        <div class="about-grid">
             
-            <div class="research-card">
-                <img src="assets/images/ambiental.jpg" alt="Ambiental">
-                <div class="card-label">Meio Ambiente e Sustentabilidade</div>
-            </div>
-            
-            <div class="research-card">
-                <img src="assets/images/telecom.jpg" alt="Telecomunicações">
-                <div class="card-label">Telecomunicações</div>
-            </div>
-            
-            <div class="research-card">
-                <img src="assets/images/producao.jpg" alt="Produção">
-                <div class="card-label">Engenharia de Produção</div>
-            </div>
+            <aside class="sidebar">
+                <h3>GESC</h3>
+                <nav aria-label="Menu da seção Sobre">
+                    <ul class="sidebar-menu">
+                        <li><a href="#coordenacao" class="active">Coordenação</a></li>
+                        <li><a href="#estrutura">Estrutura</a></li>
+                        <li><a href="#historico">Histórico</a></li>
+                        <li><a href="#palavra">Palavra do Coordenador</a></li>
+                        <li><a href="#objetivos">Objetivos</a></li>
+                        <li><a href="#parceiros">Parceiros</a></li>
+                        <li><a href="#logo">Significado do Logo</a></li>
+                        <li><a href="#mapa">Mapa do Campus</a></li>
+                    </ul>
+                </nav>
+            </aside>
 
-            <div class="research-card">
-                <img src="assets/images/adm.jpg" alt="Administração">
-                <div class="card-label">Administração</div>
-            </div>
+            <article class="content-area">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000" alt="Equipe GESC colaborando" loading="lazy">
+                
+                <div class="text-content">
+                    <p>Sejam bem-vindos ao portal oficial do <strong>GESC – Grupo de Engenharia de Sistemas Complexos</strong>, sediado na Faculdade de Tecnologia (FT) da UNICAMP, em Limeira.</p>
+                    <p>Nosso grupo consolidou-se como um centro <strong>multidisciplinar</strong> de excelência, onde pesquisadores e alunos de graduação e pós-graduação colaboram no desenvolvimento de soluções tecnológicas e modelos matemáticos avançados. Atuamos na intersecção estratégica entre as Engenharias (Telecomunicações, Transportes, Ambiental e Produção), a Administração e os Sistemas de Informação, utilizando ferramentas de Econofísica e Teoria dos Jogos para compreender fenômenos dinâmicos em mercados e redes.</p>
+                    <p>Com o apoio fundamental de agências de fomento como <strong>FAPESP</strong> e <strong>CNPq</strong>, o GESC transforma dados em inteligência estratégica. Seja através da otimização de tarifas em telecomunicações ou do estudo de fluxos logísticos e sustentabilidade, nosso compromisso é com a inovação científica e a formação de mestres e engenheiros capacitados para liderar as transformações da sociedade moderna.</p>
+                </div>
+            </article>
 
-            <div class="research-card">
-                <img src="assets/images/mestrado.jpg" alt="Mestrado">
-                <div class="card-label">Mestrado</div>
-            </div>
-
-            <div class="research-card">
-                <img src="assets/images/projetos.jpg" alt="Inovação">
-                <div class="card-label">Projetos e Inovação</div>
-            </div>
-
-            <div class="research-card">
-                <img src="assets/images/bsi.jpg" alt="Sistemas">
-                <div class="card-label">Sistemas de Informação</div>
-            </div>
         </div>
     </section>
+
+    <div class="bg-light">
+        <section class="container">
+            <div class="section-title">
+                <h2>Linhas de Pesquisa</h2>
+                <p>Conectando ciências exatas e engenharia para modelar sistemas complexos.</p>
+            </div>
+
+            <div class="cards-grid">
+                
+                <div class="research-card">
+                    <img src="assets/images/transportes.jpg" alt="Transportes">
+                    <div class="card-label">Logística e Transportes</div>
+                </div>
+                
+                <div class="research-card">
+                    <img src="assets/images/ambiental.jpg" alt="Ambiental">
+                    <div class="card-label">Meio Ambiente e Sustentabilidade</div>
+                </div>
+                
+                <div class="research-card">
+                    <img src="assets/images/telecom.jpg" alt="Telecomunicações">
+                    <div class="card-label">Telecomunicações</div>
+                </div>
+                
+                <div class="research-card">
+                    <img src="assets/images/producao.jpg" alt="Produção">
+                    <div class="card-label">Engenharia de Produção</div>
+                </div>
+
+                <div class="research-card">
+                    <img src="assets/images/adm.jpg" alt="Administração">
+                    <div class="card-label">Administração</div>
+                </div>
+
+                <div class="research-card">
+                    <img src="assets/images/mestrado.jpg" alt="Mestrado">
+                    <div class="card-label">Mestrado</div>
+                </div>
+
+                <div class="research-card">
+                    <img src="assets/images/projetos.jpg" alt="Inovação">
+                    <div class="card-label">Projetos e Inovação</div>
+                </div>
+
+                <div class="research-card">
+                    <img src="assets/images/bsi.jpg" alt="Sistemas">
+                    <div class="card-label">Sistemas de Informação</div>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+
+    <section class="coordination-section">
+        <div class="container">
+            
+            <div class="section-title">
+                <h2>Coordenação</h2>
+            </div>
+
+            <div class="coordination-card">
+                
+                <div class="founder-block">
+                    <div class="founder-image">
+                        <img src="assets/images/yuri.png" alt="Yuri Alexandre Meyer">
+                    </div>
+                    <div class="founder-content">
+                        <h3>FUNDADOR</h3>
+                        <h4>Yuri Alexandre Meyer</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Computer science students Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                            temp incididunt ut labore dol magna aliqua.
+                        </p>
+                        <div class="founder-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="founder-block reverse">
+                    <div class="founder-image">
+                        <img src="assets/images/rafael.jpg" alt="Rafael Henrique de Oliveira">
+                    </div>
+                    <div class="founder-content">
+                        <h3>FUNDADOR</h3>
+                        <h4>Rafael Henrique de Oliveira</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Computer science students Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                            temp incididunt ut labore dol magna aliqua.
+                        </p>
+                        <div class="founder-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> </div>
+    </section>
+
+    <div class="bg-white">
+        <section class="container team-section">
+            <div class="section-title">
+                <h2>Nossa Equipe</h2>
+            </div>
+
+            <div class="team-grid">
+                
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="assets/images/team1.jpg" alt="Membro da Equipe">
+                    </div>
+                    <div class="team-info">
+                        <h3>Nome do Pesquisador</h3>
+                        <span>Doutorando em Tecnologia</span>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="assets/images/team2.jpg" alt="Membro da Equipe">
+                    </div>
+                    <div class="team-info">
+                        <h3>Nome do Pesquisador</h3>
+                        <span>Mestrando em Eng.</span>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="assets/images/team3.jpg" alt="Membro da Equipe">
+                    </div>
+                    <div class="team-info">
+                        <h3>Nome do Pesquisador</h3>
+                        <span>Pesquisador Associado</span>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="assets/images/team4.jpg" alt="Membro da Equipe">
+                    </div>
+                    <div class="team-info">
+                        <h3>Nome do Pesquisador</h3>
+                        <span>Aluno de Iniciação Científica</span>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="assets/images/team1.jpg" alt="Membro da Equipe">
+                    </div>
+                    <div class="team-info">
+                        <h3>Nome do Pesquisador</h3>
+                        <span>Cargo</span>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="assets/images/team2.jpg" alt="Membro da Equipe">
+                    </div>
+                    <div class="team-info">
+                        <h3>Nome do Pesquisador</h3>
+                        <span>Cargo</span>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="assets/images/team3.jpg" alt="Membro da Equipe">
+                    </div>
+                    <div class="team-info">
+                        <h3>Nome do Pesquisador</h3>
+                        <span>Cargo</span>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="assets/images/team4.jpg" alt="Membro da Equipe">
+                    </div>
+                    <div class="team-info">
+                        <h3>Nome do Pesquisador</h3>
+                        <span>Cargo</span>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="assets/images/team1.jpg" alt="Membro da Equipe">
+                    </div>
+                    <div class="team-info">
+                        <h3>Nome do Pesquisador</h3>
+                        <span>Cargo</span>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="assets/images/team2.jpg" alt="Membro da Equipe">
+                    </div>
+                    <div class="team-info">
+                        <h3>Nome do Pesquisador</h3>
+                        <span>Cargo</span>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="assets/images/team3.jpg" alt="Membro da Equipe">
+                    </div>
+                    <div class="team-info">
+                        <h3>Nome do Pesquisador</h3>
+                        <span>Cargo</span>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> </section>
+    </div>
+
+    <div class="coordenador-card">
+    <h3>Palavra do Coordenador</h3>
+    <p>"Seja bem-vindo ao portal oficial do GESC. Nosso grupo nasceu na Faculdade de Tecnologia da UNICAMP com a missão de enfrentar a complexidade dos desafios modernos através da ciência de dados e da modelagem avançada.</p>
+    <p>Acreditamos que a integração entre a teoria rigorosa e a aplicação prática é o caminho para gerar inovação com impacto real na sociedade. No GESC, focamos no desenvolvimento de soluções inteligentes que traduzem grandes volumes de informação em estratégias eficientes para sistemas de infraestrutura, economia e tecnologia."</p>
+    <div class="assinatura">-- [Nome do Coordenador] Coordenador do GESC / FT-UNICAMP</div>
 </div>
-
-<section class="coordination-section">
-    <div class="container">
-        
-        <div class="section-title">
-            <h2>Coordenação</h2>
-        </div>
-
-        <div class="founder-block">
-            <div class="founder-image">
-                <img src="assets/images/yuri.png" alt="Foto do Coordenador">
-                <div class="placeholder-box"></div> 
-            </div>
-            <div class="founder-content">
-                <h3>FUNDADOR</h3>
-                <h4>PROF. DR. Yuri Alexandre Meyer</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Computer science students Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <div class="founder-social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="founder-block">
-            <div class="founder-content">
-                <h3>FUNDADOR</h3>
-                <h3>PROF. DR. Rafael Henrique de Oliveira</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <div class="founder-social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="founder-image">
-                <img src="assets/images/rafael.jpg" alt="Foto do Co-Fundador">
-                <div class="placeholder-box"></div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section class="team-section bg-light">
-    <div class="container">
-        <div class="section-title">
-            <h2>Nossa Equipe</h2>
-        </div>
-
-        <div class="team-grid">
-            
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <img src="assets/images/team1.jpg" alt="Membro">
-                </div>
-                <div class="team-info">
-                    <h3>Nome do Pesquisador</h3>
-                    <span>Doutorando em Tecnologia</span>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <img src="assets/images/team2.jpg" alt="Membro">
-                </div>
-                <div class="team-info">
-                    <h3>Nome do Pesquisador</h3>
-                    <span>Mestrando em Eng.</span>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <img src="assets/images/team3.jpg" alt="Membro">
-                </div>
-                <div class="team-info">
-                    <h3>Nome do Pesquisador</h3>
-                    <span>Pesquisador Associado</span>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <img src="assets/images/team4.jpg" alt="Membro">
-                </div>
-                <div class="team-info">
-                    <h3>Nome do Pesquisador</h3>
-                    <span>Aluno de IC</span>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <img src="assets/images/team2.jpg" alt="Membro">
-                </div>
-                <div class="team-info">
-                    <h3>Nome do Pesquisador</h3>
-                    <span>Mestrando em Eng.</span>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <img src="assets/images/team2.jpg" alt="Membro">
-                </div>
-                <div class="team-info">
-                    <h3>Nome do Pesquisador</h3>
-                    <span>Mestrando em Eng.</span>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <img src="assets/images/team2.jpg" alt="Membro">
-                </div>
-                <div class="team-info">
-                    <h3>Nome do Pesquisador</h3>
-                    <span>Mestrando em Eng.</span>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <img src="assets/images/team2.jpg" alt="Membro">
-                </div>
-                <div class="team-info">
-                    <h3>Nome do Pesquisador</h3>
-                    <span>Mestrando em Eng.</span>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <img src="assets/images/team2.jpg" alt="Membro">
-                </div>
-                <div class="team-info">
-                    <h3>Nome do Pesquisador</h3>
-                    <span>Mestrando em Eng.</span>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <img src="assets/images/team2.jpg" alt="Membro">
-                </div>
-                <div class="team-info">
-                    <h3>Nome do Pesquisador</h3>
-                    <span>Mestrando em Eng.</span>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <img src="assets/images/team2.jpg" alt="Membro">
-                </div>
-                <div class="team-info">
-                    <h3>Nome do Pesquisador</h3>
-                    <span>Mestrando em Eng.</span>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <img src="assets/images/team2.jpg" alt="Membro">
-                </div>
-                <div class="team-info">
-                    <h3>Nome do Pesquisador</h3>
-                    <span>Mestrando em Eng.</span>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="coordinator-word-section container">
-    <div class="coordinator-card">
-        <h3>Palavra do Coordenador</h3>
-        
-        <p class="quote-text">"Seja bem-vindo ao portal oficial do GESC. Nosso grupo nasceu na Faculdade de Tecnologia da UNICAMP com a missão de enfrentar a complexidade dos desafios modernos através da ciência de dados e da modelagem avançada.</p>
-        
-        <p class="quote-text">Acreditamos que a integração entre a teoria rigorosa e a aplicação prática é o caminho para gerar inovação com impacto real na sociedade. No GESC, focamos no desenvolvimento de soluções inteligentes que traduzem grandes volumes de informação em estratégias eficientes para sistemas de infraestrutura, economia e tecnologia."</p>
-        
-        <p class="quote-author">&mdash; <em>[Nome do Coordenador]</em> Coordenador do GESC / FT-UNICAMP</p>
-    </div>
-</section>
 
 <section class="container" id="noticias">
     <div class="section-title">
@@ -413,40 +382,8 @@
     </div>
 </section>
 
-<footer>
-    <div class="footer-container">
-        <div class="footer-brand">
-            <img src="assets/images/pe.png" alt="GESC" style="filter: brightness(0) invert(1); max-width: 300px;">
-        </div>
+    <div id="footer-placeholder"></div>
 
-        <div class="footer-col">
-            <h4>Contato</h4>
-            <p>Rua Paschoal Marmo, 1888<br>Jd. Nova Itália, Limeira - SP</p>
-            <p><strong>Email:</strong> gesc@unicamp.br</p>
-        </div>
-
-        <div class="footer-col">
-            <h4>Navegação</h4>
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Pesquisa</a></li>
-                <li><a href="#">Parceiros</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <h4>Social</h4>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        &copy; 2025 GESC - Todos os direitos reservados.
-    </div>
-</footer>
-
-<script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

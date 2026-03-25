@@ -1,0 +1,18 @@
+/* 1. VARIÁVEIS E RESET (Configurações Globais) */
+:root {
+    --primary-blue: #002266; /* Azul Marinho Unicamp (Corrigido) */
+    --accent-red: #bd1e20;   /* Vermelho GESC (Corrigido) */
+    --text-dark: #0A0A0A;    /* Cinza Escuro para texto (Corrigido) */
+    --text-light: #444444;   /* Sugestão de cinza intermediário caso precise de contraste suave, mas o principal é o 0A0A0A */
+    --bg-light: #f8f9fa;     /* Branco puro como predominante */
+    --max-width: 1200px;     
+    --header-height: 110px;  
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+body { background-color: #fff; color: var(--text-dark); display: flex; flex-direction: column; min-height: 100vh; }
+
+img { max-width: 100%; display: block; }
+
+a { text-decoration: none; }
