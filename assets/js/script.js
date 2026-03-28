@@ -25,9 +25,9 @@ function toggleMenu() {
 
 // Slider Simples
 const heroImages = [
-    "assets/images/hero1.jpg",
+    "assets/images/hero3.jpg",
     "assets/images/hero2.jpg",
-    "assets/images/hero3.jpg"
+    "assets/images/hero1.jpg"
 ];
 
 let currentSlide = 0;
