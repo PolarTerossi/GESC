@@ -161,11 +161,6 @@
     color: #333; /* Cor do texto */
 }
 
-/* Efeito de Hover: Sombra Vermelha Intensificada */
-.coordenador-card:hover {
-    box-shadow: 0 10px 20px rgb(255, 0, 0); /* Sombra vermelha forte no hover */
-}
-
 /* 5. LINHAS DE PESQUISA */
 .bg-light { background-color: var(--bg-light); padding: 80px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
 

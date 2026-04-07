@@ -16,3 +16,14 @@ body { background-color: #fff; color: var(--text-dark); display: flex; flex-dire
 img { max-width: 100%; display: block; }
 
 a { text-decoration: none; }
+
+/* --- ESTILOS DA SEÇÃO SOBRE / PORTAL GESC --- */
+
+.section-title, 
+.about-grid {
+    max-width: var(--max-width); /* Usa os 1200px que você definiu lá no topo */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px; /* Descola o texto das laterais */
+    padding-right: 20px;
+}

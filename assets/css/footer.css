@@ -13,7 +13,7 @@ footer {
     padding: 0 20px;
     display: flex; /* Mudamos de grid para flex */
     justify-content: space-between; /* Espalha as colunas */
-    align-items: center; /* ALINHA TUDO VERTICALMENTE AO CENTRO */
+    align-items: flex-start; /* ALINHA TUDO VERTICALMENTE AO CENTRO */
     gap: 30px;
     flex-wrap: wrap; /* Permite quebrar linha no celular */
 }
