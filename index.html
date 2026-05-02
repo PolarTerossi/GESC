@@ -69,56 +69,94 @@
     </section>
 
     <div class="bg-light">
-        <section class="container" id="linhas-pesquisa" class="sua-classe-aqui">
-            <div class="section-title">
-                <h2>Linhas de Pesquisa</h2>
-                <p>Conectando ciências exatas e engenharia para modelar sistemas complexos.</p>
-            </div>
+        <section class="container" id="linhas-pesquisa">
+    <div class="gesc-research-header text-center">
+        <span class="text-red font-bold tracking-widest text-sm uppercase">Pesquisa Interdisciplinar</span>
+        <h2 class="text-4xl font-bold mt-2 mb-4">GESC — Áreas de Atuação</h2>
+        <p class="text-gray-600 max-w-3xl mx-auto mb-10">
+            O Grupo de Engenharia de Sistemas Complexos (GESC) atua de forma interdisciplinar, integrando
+            fundamentos da física, matemática aplicada, engenharia e ciências sociais para modelar, analisar e
+            otimizar sistemas complexos em diferentes domínios.
+        </p>
+    </div>
 
-            <div class="cards-grid">
-                
-                <div class="research-card">
-                    <img src="assets/images/transportes.jpg" alt="Transportes">
-                    <div class="card-label">Logística e Transportes</div>
-                </div>
-                
-                <div class="research-card">
-                    <img src="assets/images/ambiental.jpg" alt="Ambiental">
-                    <div class="card-label">Meio Ambiente e Sustentabilidade</div>
-                </div>
-                
-                <div class="research-card">
-                    <img src="assets/images/telecom.jpg" alt="Telecomunicações">
-                    <div class="card-label">Telecomunicações</div>
-                </div>
-                
-                <div class="research-card">
-                    <img src="assets/images/producao.jpg" alt="Produção">
-                    <div class="card-label">Engenharia de Produção</div>
-                </div>
+    <div class="gesc-interactive-area">
+    <div class="gesc-graph">
+        <svg viewBox="-150 0 1100 600" xmlns="http://www.w3.org/2000/svg">
+            <g class="network-lines" stroke="#e0e6ed" stroke-width="3">
+                <line x1="400" y1="100" x2="573" y2="200" />
+                <line x1="573" y1="200" x2="573" y2="400" />
+                <line x1="573" y1="400" x2="400" y2="500" />
+                <line x1="400" y1="500" x2="227" y2="400" />
+                <line x1="227" y1="400" x2="227" y2="200" />
+                <line x1="227" y1="200" x2="400" y2="100" />
+                <line x1="400" y1="100" x2="400" y2="500" />
+                <line x1="227" y1="200" x2="573" y2="400" />
+                <line x1="227" y1="400" x2="573" y2="200" />
+            </g>
 
-                <div class="research-card">
-                    <img src="assets/images/adm.jpg" alt="Administração">
-                    <div class="card-label">Administração</div>
-                </div>
+            <g class="gesc-nodes">
+                <g class="node-group" data-axis="1" onclick="changeAxis(1)">
+                    <circle cx="400" cy="100" r="35" class="node-circle" />
+                    <text x="400" y="106" class="node-number">1</text>
+                    <text x="400" y="45" class="node-label" text-anchor="middle">Fundamentos Mat. e Físicos</text>
+                </g>
+                <g class="node-group" data-axis="2" onclick="changeAxis(2)">
+                    <circle cx="573" cy="200" r="35" class="node-circle" />
+                    <text x="573" y="206" class="node-number">2</text>
+                    <text x="625" y="200" class="node-label" text-anchor="start" alignment-baseline="middle">Modelagem e Simulação</text>
+                </g>
+                <g class="node-group" data-axis="3" onclick="changeAxis(3)">
+                    <circle cx="573" cy="400" r="35" class="node-circle" />
+                    <text x="573" y="406" class="node-number">3</text>
+                    <text x="625" y="400" class="node-label" text-anchor="start" alignment-baseline="middle">Interação Estratégica</text>
+                </g>
+                <g class="node-group" data-axis="4" onclick="changeAxis(4)">
+                    <circle cx="400" cy="500" r="35" class="node-circle" />
+                    <text x="400" y="506" class="node-number">4</text>
+                    <text x="400" y="565" class="node-label" text-anchor="middle">Estrutura e Redes</text>
+                </g>
+                <g class="node-group" data-axis="5" onclick="changeAxis(5)">
+                    <circle cx="227" cy="400" r="35" class="node-circle" />
+                    <text x="227" y="406" class="node-number">5</text>
+                    <text x="175" y="400" class="node-label" text-anchor="end" alignment-baseline="middle">Engenharia e Aplicações</text>
+                </g>
+                <g class="node-group active" data-axis="6" onclick="changeAxis(6)">
+                    <circle cx="227" cy="200" r="35" class="node-circle" />
+                    <text x="227" y="206" class="node-number">6</text>
+                    <text x="175" y="200" class="node-label" text-anchor="end" alignment-baseline="middle">Dados e Informação</text>
+                </g>
+            </g>
+        </svg>
+    </div>
 
-                <div class="research-card">
-                    <img src="assets/images/mestrado.jpg" alt="Mestrado">
-                    <div class="card-label">Pós-Graduação</div>
-                </div>
+    <div class="gesc-info-panel">
+        <div class="info-header">
+            <span class="red-line"></span>
+            <span class="info-subtitle" id="axis-subtitle">EIXO 6 SELECIONADO</span>
+        </div>
+        <p class="axis-counter" id="axis-counter">EIXO 6 / 6</p>
+        <h3 class="axis-title" id="axis-title">Dados, Informação e Complexidade</h3>
+        
+        <ul class="axis-list" id="axis-list">
+            <li>Teoria da Informação e Entropia</li>
+            <li>Machine Learning e Mineração de Dados</li>
+            <li>Análise de Séries Temporais Complexas</li>
+            <li>Medidas de Complexidade (Entropia Amostral, Lempel-Ziv)</li>
+            <li>Visualização e Análise de Dados de Alta Dimensão</li>
+        </ul>
 
-                <div class="research-card">
-                    <img src="assets/images/projetos.jpg" alt="Inovação">
-                    <div class="card-label">Projetos e Inovação</div>
-                </div>
-
-                <div class="research-card">
-                    <img src="assets/images/bsi.jpg" alt="Sistemas">
-                    <div class="card-label">Sistemas de Informação</div>
-                </div>
-                
-            </div>
-        </section>
+        <div class="axis-dots" id="axis-dots">
+            <span onclick="changeAxis(1)"></span>
+            <span onclick="changeAxis(2)"></span>
+            <span onclick="changeAxis(3)"></span>
+            <span onclick="changeAxis(4)"></span>
+            <span onclick="changeAxis(5)"></span>
+            <span class="active" onclick="changeAxis(6)"></span>
+        </div>
+    </div>
+</div>
+</section>
     </div>
 
     <section id="coordenacao" class="coordination-section">
@@ -399,5 +437,6 @@
     <div id="footer-placeholder"></div>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/areas_atuacao.js"></script>
 </body>
 </html>
